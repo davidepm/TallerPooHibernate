@@ -1,0 +1,16 @@
+ 1: <?xml version="1.0" encoding="UTF-8"?>
+ 2: <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+ 3: <hibernate-configuration>
+ 4:   <session-factory>
+ 5:     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+ 6:     <property name="connection.url">jdbc:mysql://192.168.0.100:3306/hibernate1</property>
+ 7:     <property name="connection.username">root</property>
+ 8:     <property name="connection.password">1234</property>
+ 9:     <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+10:     <property name="hibernate.show_sql">true</property>
+11:
+12:     <mapping resource="ejemplo01/Profesor.hbm.xml"/>
+13:     <mapping class="ejemplo01.Profesor"/>
+14:
+15:   </session-factory>
+16: </hibernate-configuration>
